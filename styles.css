@@ -1,0 +1,208 @@
+body{
+    font-family: 'Share Tech', sans-serif;
+    background-color: rgb(2, 2, 36);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    height: 100%;
+}
+.contents{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position:relative;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+section h1{
+    font-size: 2rem;
+    
+    margin: 5%;
+    color: ivory;
+    text-decoration: underline;
+}
+
+
+/* Landing page */
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height:100vh;
+    background-image:linear-gradient(345deg, rgba(2, 2, 36,.7) 0%, rgba(0,0,0,.7) 85%, rgba(0,0,0,.7) 100%), url(/images/motherboard.jpg);
+    background-position: center;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+}
+#down-button{
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(0, 0, 0, .6) ;
+}
+#down-button:hover{
+    transition: .5s ease;
+    transform: rotate(90deg);
+    border: 3px solid white;
+}
+
+
+
+/* .light-switch{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2% 0 0 2%;
+    background-color: turquoise;
+    height: 50px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.light-switch img{
+    height: 1rem;
+    width: 1rem;
+    z-index: 100;
+}
+.toggler {
+    
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    z-index: 5;
+  }
+.toggler input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  } */
+
+/* resume */
+.resume-container{
+    display: flex;
+    line-height: 2rem;
+    padding: 0 5%;
+        /* min-height: 100%; */
+}
+
+
+.resumeColumn1{
+    border-right: 1px solid white;
+    margin-right: 3rem;
+    flex:2;
+}
+.resumeColumn2{
+    flex:3;
+}
+
+
+/* about */
+.about{
+    min-height: 100vh;
+    color: white;
+   
+}
+.portfolio{
+    /* align-content: center; */
+    /* padding: 0 auto; */
+}
+
+.projects{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.projectLink{
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+}
+.projectLink img:hover{
+    transition: .5s ease;
+    box-shadow: 0px 10px 14px 2px rgba(0,0,0,0.86);
+    transform: scale(1.2);
+    transform: translateY(-5%) ;
+    border: 3px solid white;
+}
+.contact-box{
+    
+    min-height: 80vh;
+    width: 100%;
+    background-color: rgb(34, 31, 31);
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.contact-form{
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex:2; */
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+} 
+form{ 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: vertical;
+}
+input:active{
+    transition: .2s ease;
+
+}
+@media only screen and (max-width: 600px){
+    .resume-container{
+        flex-direction: column;
+    }
+    .resumeColumn1{
+        gap: 3rem;
+        border:none;
+        
+    }
+    .resume-container img{
+        display: none;
+    }
+}
+
+
