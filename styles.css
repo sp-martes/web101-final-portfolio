@@ -70,7 +70,7 @@ a{
     flex-direction: column;
     justify-content: center;
     min-height:100vh;
-    background-image:linear-gradient(345deg, rgba(2, 2, 36,.7) 0%, rgba(0,0,0,.7) 85%, rgba(0,0,0,.7) 100%), url(/images/motherboard.jpg);
+    background-image:linear-gradient(345deg, rgba(2, 2, 36,.7) 0%, rgba(0,0,0,.7) 85%, rgba(0,0,0,.7) 100%), url(images/motherboard.jpg);
     background-position: center;
     font-size: 2rem;
     text-align: center;
