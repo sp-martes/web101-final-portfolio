@@ -10,20 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
     <title>Spencer Martes: Developer in Training</title>
 </head>
-<body>
+<body> 
+    <div id="nav">
+        <span class="burger" onclick="openNav()"> &#9776; </span>
+        <div class="sidenav">
+            <a href class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#about1">About</a>
+            <a href="#resume1">Resume</a>
+            <a href="#portfolio1">Past Works</a>
+            <a href="#contact1">Contact</a>
+        </div>
+    </div>
     <div class="wrap">
-        <main class="landing">
-                <h1>Hi I'm Spencer Martes. Web Developer In Progress</h1>
+       
+        <main class="landing" id="landing1">
+            <h1>Hi I'm Spencer Martes. Web Developer In Progress</h1>
+            <a href="#about1">
                 <button type="button" id="down-button">&#8680</button>
+            </a>
         </main>
         <div class="contents">
             
-            
-            <section class="about">
+            <section class="about" id="about1">
                 <h1>About Me</h1>
+                <p>Well it all started back in 97 when Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quod molestias recusandae dolorem necessitatibus consequuntur cupiditate tenetur, eius facilis delectus voluptas praesentium. Quae eius dolore corporis ad, rerum architecto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aut deleniti mollitia magnam vel porro ex quisquam ad minima perspiciatis, architecto, similique modi exercitationem quam natus dicta, officiis eius earum. Ducimus quod molestias recusandae dolorem necessitatibus consequuntur cupiditate tenetur, eius facilis delectus voluptas praesentium. Quae eius dolore corporis ad, rerum architecto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aut deleniti mollitia magnam vel porro ex quisquam ad minima perspiciatis, architecto, similique modi exercitationem quam natus dicta, officiis eius earum.</p>
             </section>
             
-            <section class="resume">
+            <section class="resume" id="resume1">
               <h1>Resume</h1>
                 <div class="resume-container">
                     <div class="resumeColumn1">
@@ -92,8 +105,9 @@
                 </div>
             </section>
             
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio1">
                 <h1>Past Works</h1>
+                <h2>Here are some of the projects I've stumbled through so far.</h2>
                 <div class="projects">
                     <div class="projectLink">
                         <a href="https://sp-martes.github.io/checkpoint_1/">
@@ -122,16 +136,16 @@
                 </div>
             </section>
             
-            <section class="contact">
+            <section class="contact" id="contact1">
                 <div class="contact-box">
-                    <div>
+                    <div class="contact-1">
                         <h1>Contact Me</h1>
                         <p>Mobile: 123-456-7890</p>
                         <p>suhdude@mediocresite.com</p>   
                         <p>www.mediocresite.com</p>
                         
                     </div>
-                    <div>
+                    <div class="contact-2">
                         <h2>Send me words.</h2>
                         <form>
                             <label for="name">Name</label>
@@ -143,11 +157,15 @@
                             <option value="eewNeither">Pets are for suckers</option>
                             </select>
                             <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Your thoughts will not be shared with third party advertising companies......" style="height:200px"></textarea>
-                            <input type="submit" value="Submit">
+                            <textarea id="subject" name="subject" placeholder="Your thoughts will not be shared with third party advertising companies......" style="height:150px"></textarea>
+                            <input type="submit" value="Submit" id="submit">
                         </form>
                     </div>
-                </div>    
+                    
+                </div>  
+                <a href="#landing1">
+                    <button type="button" id="up-button">&#8686</button>
+                </a> 
             </section>
         </div>
     </div>
