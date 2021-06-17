@@ -1,3 +1,3 @@
-const openNav = () => {
-    document.querySelector("sidenav").style.width = "33%";
-  }
+// const openNav = () => {
+//     document.querySelector("sidenav").style.width = "33%";
+//   }
